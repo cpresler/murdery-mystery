@@ -4,6 +4,14 @@ def get_suspect_intent_handler(request):
     """
     Whodunnit??
     """
+    # Testing Code:
+    test = request.slots["test"] 
+
+    if test == None:
+        return alexa.create_response("Could not find a test phrase!")
+    
+    return alexa.create_response("Hello World this is my test {}".format(test),
+                                 end_session=False)
 
     # Get variables like userId, slots, intent name etc from the 'Request' object
     # suspect = request.slots["Suspect"] 
@@ -17,12 +25,3 @@ def get_suspect_intent_handler(request):
     # return alexa.create_response("Finding a recipe with the suspect {}".format(suspect),
     #                              end_session=False, card_obj=card)
 
-
-    # Testing Code:
-    test = request.slots["test"] 
-
-    if test == None:
-        return alexa.create_response("Could not find a test phrase!")
-    
-    return alexa.create_response("Hello World this is my test {}".format(test),
-                                 end_session=False)
