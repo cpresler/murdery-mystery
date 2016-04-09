@@ -1,6 +1,6 @@
 suspects = {
 	"suspect1": {
-		"name": "",
+		"name": "sarah",
 		"facial hair": "yes",
 		"scarf": "no",
 		"hat": "yes",
@@ -9,7 +9,7 @@ suspects = {
 		"glasses": "yes"
 	},
 	"suspect2": {
-		"name": "",
+		"name": "nina",
 		"facial hair": "no",
 		"scarf": "yes",
 		"hat": "no",
@@ -18,7 +18,7 @@ suspects = {
 		"glasses": "no"
 	},
 	"suspect3": {
-		"name": "",
+		"name": "dee",
 		"facial hair": "yes",
 		"scarf": "no",
 		"hat": "yes",
@@ -27,7 +27,7 @@ suspects = {
 		"glasses": "no"
 	},
 	"suspect4": {
-		"name": "",
+		"name": "alison",
 		"facial hair": "yes",
 		"scarf": "no",
 		"hat": "no",
@@ -36,7 +36,7 @@ suspects = {
 		"glasses": "yes"
 	},
 	"suspect5": {
-		"name": "",
+		"name": "anthony",
 		"facial hair": "no",
 		"scarf": "no",
 		"hat": "yes",
@@ -45,7 +45,7 @@ suspects = {
 		"glasses": "no"
 	},
 	"suspect6": {
-		"name": "",
+		"name": "christy",
 		"facial hair": "no",
 		"scarf": "yes",
 		"hat": "yes",
