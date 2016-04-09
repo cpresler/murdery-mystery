@@ -3,4 +3,7 @@
 import random
 import weaponlist
 
+murder_weapon = random.choice(weapon_list)
+
+
 
