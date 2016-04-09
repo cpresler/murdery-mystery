@@ -1,6 +1,0 @@
-GetAttr Do they have {Attr}?
-GetAttr Do they have a {Attr}?
-GetAttr Do they have an {Attr}?
-
-GetSuspect Is the killer {Suspect}?
-GetSuspect Is it {Suspect}?
