@@ -11,7 +11,17 @@ from Place_List import place_of_murdery
 from suspects import suspects
 
 #limit number of turns
-turn = 3
+turn = 0
+killer = {}
+killer_name = ''
+killer_hair = ''
+killer_scarf = ''
+killer_hat = ''
+killer_freckles = ''
+killer_pet = ''
+killer_glasses = ''
+
+
 
 def lambda_handler(request_obj, context=None):
     '''
@@ -41,8 +51,8 @@ def default_handler(request):
 
 @alexa.request_handler("LaunchRequest")
 def launch_request_handler(request):
-    # #limit number of turns
-    # turn = 3
+    #limit number of turns
+    turn = 3
 
     #use random module to select a random murder weapon
     murder_weapon = random.choice(weapon_list)
