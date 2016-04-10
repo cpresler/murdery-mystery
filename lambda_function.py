@@ -116,7 +116,7 @@ def get_attr_handler(request):
       if attr == None:
         return alexa.create_response("I'm sorry I didn't understand your question, can you please ask again?")
       elif (turn > 1):
-        if(attr == 'facial hair' || attr == 'beard' || attr == 'moustache'):
+        if(attr == 'facial hair' or attr == 'beard' or attr == 'moustache'):
           if(killer_hair == 'yes'):
             return alexa.create_response("Yes, the killer has facial hair", end_session=False)
           else:
@@ -146,7 +146,7 @@ def get_attr_handler(request):
 
         elif(attr == 'glasses'):
           if(killer_glasses == 'yes'):
-          return alexa.create_response("Yes, the killer is wearing glasses", end_session=False)
+            return alexa.create_response("Yes, the killer is wearing glasses", end_session=False)
           else:
             return alexa.create_response("No, the killer does not have a glasses", end_session=False)
         else:
