@@ -1,5 +1,3 @@
-# Placing the lambda function here in un-zipped form for easy reference.
-
 """
 In this file we specify default event handlers which are then populated into the handler map using metaprogramming
 Copyright Anjishnu Kumar 2015
@@ -23,11 +21,9 @@ def lambda_handler(request_obj, context=None):
     '''
 
     metadata = {'user_name' : 'SomeRandomDude'} # add your own metadata to the request using key value pairs
-    
-    if not 
-    
-    ''' inject user relevant metadata into the request if you want to, here.    
-    e.g. Something like : 
+
+    ''' inject user relevant metadata into the request if you want to, here.
+    e.g. Something like :
     ... metadata = {'user_name' : some_database.query_user_name(request.get_user_id())}
 
     Then in the handler function you can do something like -
@@ -61,40 +57,40 @@ def launch_request_handler(request):
     killer = random.choice(suspected_killers)
 
 
-    return alexa.create_response(message="One of you killed with a {0} in the {1}. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and they’ll be arrested and tried. Guess wrong and they go free forever.".format(murder_weapon, murder_location))
+    return alexa.create_response(message="One of you killed with a {0} in the {1}. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and they'll be arrested and tried. Guess wrong and they go free forever.".format(murder_weapon, murder_location))
 
 
 @alexa.request_handler("SessionEndedRequest")
 def session_ended_request_handler(request):
     return alexa.create_response(message="Goodbye!")
 
-    
+
 @alexa.intent_handler('GetSuspect')
 def get_suspect_intent_handler(request):
     """
     Whodunnit??
     """
     # Get variables like userId, slots, intent name etc from the 'Request' object
-    suspect = request.slots["Suspect"] 
+    suspect = request.slots["Suspect"]
 
 
     if suspect == None:
         return alexa.create_response("Could not find a suspect!")
 
     elif suspect == killer:
-        return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer’s day.  But someone’s day was surely saved.", end_session=True)
+        return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer's day.  But someone's day was surely saved.", end_session=True)
 
     else:
-        return alexa.create_response("You are wrong, the killer will now go free and the victim’s murder will never be solved. Way to ruin everything. ", end_session=True)
+        return alexa.create_response("You are wrong, the killer will now go free and the victim's murder will never be solved. Way to ruin everything. ", end_session=True)
 
 
 @alexa.intent_handler('GetAttr')
 def get_attr_handler(request):
     """
-    You can insert arbitrary business logic code here    
+    You can insert arbitrary business logic code here
     """
 
     # Get variables like userId, slots, intent name etc from the 'Request' object
-    test = request.slots["Attr"] 
+    test = request.slots["Attr"]
 
     return alexa.create_response(message="The attribute that was passed was {}".format(test))
