@@ -1,4 +1,6 @@
 facial hair
+beard
+moustache
 scarf
 hat
 freckles

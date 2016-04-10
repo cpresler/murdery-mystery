@@ -20,14 +20,23 @@ suspected_killers = []
 
 #interate through the suspect dictionaries and append the 'name' values to the suspected killers list
 for suspect in suspects.keys():
-	suspected_killers.append(suspects[suspect]['name'])
+	suspected_killers.append(suspects[suspect])
 
 #use random module to select a random killer
 killer = random.choice(suspected_killers)
 
+killer_name = killer['name']
+killer_hair = killer['facial hair']
+killer_scarf = killer['scarf']
+killer_hat = killer['hat']
+killer_freckles = killer['freckles']
+killer_pet = killer['pet']
+killer_glasses = killer['glasses']
+
 
 return alexa.create_response(message="One of you killed with a {0} in the {1}. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and they’ll be arrested and tried. Guess wrong and they go free forever.".format(murder_weapon, murder_location))
- 
+
+
 
 
 

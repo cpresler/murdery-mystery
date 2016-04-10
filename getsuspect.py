@@ -6,12 +6,13 @@ def get_suspect_intent_handler(request):
     """
     # Get variables like userId, slots, intent name etc from the 'Request' object
     suspect = request.slots["Suspect"]
+    suspect = suspect.lowercase 
 
 
     if suspect == None:
         return alexa.create_response("Could not find a suspect!")
 
-    elif suspect == killer:
+    elif suspect == killer_name:
         return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer’s day.  But someone’s day was surely saved.", end_session=True)
 
     elif susepct != killer and turn >1:
