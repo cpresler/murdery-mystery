@@ -23,6 +23,10 @@ for suspect in suspects.keys():
 killer = random.choice(suspected_killers)
 
 
+return alexa.create_response(message="Yesterday the victim was killed with a {0} in the {1}. I have six suspects on the screen in front of you. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and they’ll be arrested and tried. Guess wrong and they go free forever you will be haunted by the victim for the rest of your days.".format(murder_weapon, murder_location))
+ 
+
+
 
 
 
