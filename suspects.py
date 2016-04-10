@@ -4,7 +4,7 @@ suspects = {
 		"facial hair": "yes",
 		"scarf": "no",
 		"hat": "yes",
-		"old": "No",
+		"freckles": "No",
 		"pet": "yes",
 		"glasses": "yes"
 	},
@@ -13,7 +13,7 @@ suspects = {
 		"facial hair": "no",
 		"scarf": "yes",
 		"hat": "no",
-		"old": "yes",
+		"freckles": "yes",
 		"pet": "yes",
 		"glasses": "no"
 	},
@@ -22,7 +22,7 @@ suspects = {
 		"facial hair": "yes",
 		"scarf": "no",
 		"hat": "yes",
-		"old": "yes",
+		"freckles": "yes",
 		"pet": "yes",
 		"glasses": "no"
 	},
@@ -31,7 +31,7 @@ suspects = {
 		"facial hair": "yes",
 		"scarf": "no",
 		"hat": "no",
-		"old": "yes",
+		"freckles": "yes",
 		"pet": "no",
 		"glasses": "yes"
 	},
@@ -40,7 +40,7 @@ suspects = {
 		"facial hair": "no",
 		"scarf": "no",
 		"hat": "yes",
-		"old": "no",
+		"freckles": "no",
 		"pet": "no",
 		"glasses": "no"
 	},
@@ -49,7 +49,7 @@ suspects = {
 		"facial hair": "no",
 		"scarf": "yes",
 		"hat": "yes",
-		"old": "no",
+		"freckles": "no",
 		"pet": "no",
 		"glasses": "yes"
 	}
