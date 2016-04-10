@@ -15,5 +15,5 @@ def get_suspect_intent_handler(request):
         return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer’s day.  But someone’s day was surely saved.", end_session=True)
 
     else:
-        return alexa.create_response("You are wrong, the killer will now go free and victim’s murder will never be solved. Way to ruin everything. ", end_session=True)
+        return alexa.create_response("You are wrong, the killer will now go free and the victim’s murder will never be solved. Way to ruin everything. ", end_session=True)
 
