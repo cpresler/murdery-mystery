@@ -6,27 +6,38 @@ GetAttr does the person have an {Attr}
 GetAttr does the killer have {Attr}
 GetAttr does the killer have a {Attr}
 GetAttr does the killer have an {Attr}
-GetAttr do they have a {Attr}
-GetAttr do they hav {Attr}
+GetAttr does the suspect have {Attr}
+GetAttr does the suspect have a {Attr}
+GetAttr does the suspect have an {Attr}
 GetAttr is the killer wearing {Attr}
 GetAttr is the killer wearing a {Attr}
 GetAttr has the killer got a {Attr}
 GetAttr has the killer got {Attr}
+GetAttr is the suspect wearing {Attr}
+GetAttr is the suspect wearing a {Attr}
+GetAttr has the suspect got a {Attr}
+GetAttr has the suspect got {Attr}
 GetAttr is there a {Attr}
-GetAttr is the killer wearing a {Attr}
+GetAttr is there an {Attr}
 GetAttr is he wearing {Attr}
 GetAttr is she wearing {Attr}
 GetAttr is he wearing a {Attr}
 GetAttr is she wearing a {Attr}
+GetAttr is he wearing an {Attr}
+GetAttr is she wearing an {Attr}
 GetAttr do they have a {Attr} on
+GetAttr do they have an {Attr} on
 GetAttr does the killer have a {Attr} on
+GetAttr does the suspect have a {Attr} on
 GetAttr does she have {Attr}
 GetAttr does he have {Attr}
 GetAttr does she have a {Attr}
 GetAttr does he have a {Attr}
+GetAttr does she have an {Attr}
+GetAttr does he have an {Attr}
 GetAttr does the killer have {Attr}
+GetAttr does the suspect have {Attr}
 GetAttr are there {Attr}
-GetAttr is there a {Attr}
  
 GetSuspect is the killer {Suspect}
 GetSuspect is it {Suspect}
@@ -34,3 +45,6 @@ GetSuspect i think the killer is {Suspect}
 GetSuspect i think its {Suspect}
 GetSuspect is the killer {Suspect}
 GetSuspect my guess is {Suspect}
+GetSuspect its {Suspect}
+GetSuspect it is {Suspect}
+GetSuspect the killer is {Suspect}
