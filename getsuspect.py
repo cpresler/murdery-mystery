@@ -15,11 +15,11 @@ def get_suspect_intent_handler(request):
     elif suspect == killer_name:
         return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer’s day.  But someone’s day was surely saved.", end_session=True)
 
-    elif susepct != killer and turn >1:
+    elif susepct != killer_name and turn >1:
         return alexa.create_response("Nope! You're wrong. Ask for a clue about the killer or guess the killer again.")
         turn = turn -1
 
-    elif suspect != killer and turn = 1:
+    elif suspect != killer_name and turn = 1:
         return alexa.create_response("Too bad so sad! You're wrong. You have one more guess to catch the killer.")
         turn = turn - 1
 
