@@ -2,9 +2,9 @@
 
 #import random module, weapon list, location list, and suspects dictionaries
 import random
-import weaponlist
-import Place_List
-import suspects
+from weaponlist import weapon_list
+from Place_List import place_of_murdery
+from suspects import suspects
 
 #use random module to select a random murder weapon
 murder_weapon = random.choice(weapon_list)
