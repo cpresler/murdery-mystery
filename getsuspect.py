@@ -11,7 +11,7 @@ def get_suspect_intent_handler(request):
     if suspect == None:
         return alexa.create_response("Could not find a suspect!")
 
-    elif suspect == murderer:
+    elif suspect == killer:
         return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer’s day.  But someone’s day was surely saved.", end_session=True)
 
     else:
