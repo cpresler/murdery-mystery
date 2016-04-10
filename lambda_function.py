@@ -57,7 +57,7 @@ def launch_request_handler(request):
     killer = random.choice(suspected_killers)
 
 
-    return alexa.create_response(message="One of you killed with a {0} in the {1}. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and they'll be arrested and tried. Guess wrong and they go free forever.".format(murder_weapon, murder_location))
+    return alexa.create_response(message="One of you killed with a {0} in the {1}. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and they'll be arrested and tried. Guess wrong and they go free forever. No pressure. So, what is your first question?".format(murder_weapon, murder_location))
 
 
 @alexa.request_handler("SessionEndedRequest")
