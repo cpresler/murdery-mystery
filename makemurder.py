@@ -6,6 +6,9 @@ from weaponlist import weapon_list
 from Place_List import place_of_murdery
 from suspects import suspects
 
+#limit number of turns
+turn = 3
+
 #use random module to select a random murder weapon
 murder_weapon = random.choice(weapon_list)
 
