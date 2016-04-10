@@ -11,7 +11,7 @@ from Place_List import place_of_murdery
 from suspects import suspects
 
 #limit number of turns
-turn = 0
+turn = 3
 killer = {}
 killer_name = ''
 killer_hair = ''
@@ -20,7 +20,7 @@ killer_hat = ''
 killer_freckles = ''
 killer_pet = ''
 killer_glasses = ''
-
+suspect = ''
 
 
 def lambda_handler(request_obj, context=None):
@@ -102,7 +102,7 @@ def get_suspect_intent_handler(request):
     elif suspect == killer_name:
         return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer's day.  But someone's day was surely saved.", end_session=True)
 
-    elif susepct != killer_name and turn >1:
+    elif suspect != killer_name and turn > 1:
         return alexa.create_response("Nope! You're wrong. Ask for a clue about the killer or guess the killer again.")
         turn = turn -1
 
