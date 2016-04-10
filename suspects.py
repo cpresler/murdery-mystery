@@ -1,6 +1,6 @@
 suspects = {
 	"suspect1": {
-		"name": "sarah",
+		"name": "anthony",
 		"facial hair": "yes",
 		"scarf": "no",
 		"hat": "yes",
@@ -36,7 +36,7 @@ suspects = {
 		"glasses": "yes"
 	},
 	"suspect5": {
-		"name": "anthony",
+		"name": "sarah",
 		"facial hair": "no",
 		"scarf": "no",
 		"hat": "yes",
