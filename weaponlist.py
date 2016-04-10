@@ -7,7 +7,7 @@ weapon_list = ["sharp stiletto",
 "rainbow titanium butterfly knife", 
 "Nickelback album", 
 "state of the art Midi Fighter Spectra",
-"Xbox one",
+"Playstation 4",
 "$25 Amazon gift card", 
 ]
 
