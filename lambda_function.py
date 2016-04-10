@@ -10,7 +10,8 @@ from weaponlist import weapon_list
 from Place_List import place_of_murdery
 from suspects import suspects
 
-
+#limit number of turns
+turn = 3
 
 def lambda_handler(request_obj, context=None):
     '''
@@ -40,8 +41,8 @@ def default_handler(request):
 
 @alexa.request_handler("LaunchRequest")
 def launch_request_handler(request):
-    #limit number of turns
-    turn = 3
+    # #limit number of turns
+    # turn = 3
 
     #use random module to select a random murder weapon
     murder_weapon = random.choice(weapon_list)
@@ -82,7 +83,7 @@ def get_suspect_intent_handler(request):
     """
     # Get variables like userId, slots, intent name etc from the 'Request' object
     suspect = request.slots["Suspect"]
-    suspect = suspect.lowercase
+    suspect = suspect.lower()
 
 
     if suspect == None:
@@ -111,7 +112,7 @@ def get_attr_handler(request):
 
       # Get variables like userId, slots, intent name etc from the 'Request' object
       attr = request.slots["Attr"]
-      attr = attr.lowercase
+      attr = attr.lower()
 
       if attr == None:
         return alexa.create_response("I'm sorry I didn't understand your question, can you please ask again?")
