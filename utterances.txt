@@ -1,36 +1,36 @@
-GetAttr Do they have {Attr}?
-GetAttr Do they have a {Attr}?
-GetAttr Do they have an {Attr}?
-GetAttr Does the person have a {Attr}?
-GetAttr Does the person have an {Attr}?
-GetAttr Does the killer have {Attr}?
-GetAttr Does the killer have a {Attr}?
-GetAttr Does the killer have an {Attr}?
-GetAttr Do they have a {Attr}?
-GetAttr Do they hav {Attr}?
-GetAttr Is the killer wearing {Attr}?
-GetAttr Is the killer wearing a {Attr}?
-GetAttr Has the killer got a {Attr}?
-GetAttr Has the killer got {Attr}?
-GetAttr Is there a {Attr}?
-GetAttr Is the killer wearing a {Attr}?
-GetAttr Is he wearing {Attr}?
-GetAttr Is she wearing {Attr}?
-GetAttr Is he wearing a {Attr}?
-GetAttr Is she wearing a {Attr}?
-GetAttr Do they have a {Attr} on?
-GetAttr Does the killer have a {Attr} on?
-GetAttr Does she have {Attr}?
-GetAttr Does he have {Attr}?
-GetAttr Does she have a {Attr}?
-GetAttr Does he have a {Attr}?
-GetAttr Does the killer have {Attr}?
-GetAttr Are there {Attr}?
-GetAttr Is there a {Attr}?
+GetAttr do they have {Attr}
+GetAttr do they have a {Attr}
+GetAttr do they have an {Attr}
+GetAttr does the person have a {Attr}
+GetAttr does the person have an {Attr}
+GetAttr does the killer have {Attr}
+GetAttr does the killer have a {Attr}
+GetAttr does the killer have an {Attr}
+GetAttr do they have a {Attr}
+GetAttr do they hav {Attr}
+GetAttr is the killer wearing {Attr}
+GetAttr is the killer wearing a {Attr}
+GetAttr has the killer got a {Attr}
+GetAttr has the killer got {Attr}
+GetAttr is there a {Attr}
+GetAttr is the killer wearing a {Attr}
+GetAttr is he wearing {Attr}
+GetAttr is she wearing {Attr}
+GetAttr is he wearing a {Attr}
+GetAttr is she wearing a {Attr}
+GetAttr do they have a {Attr} on
+GetAttr does the killer have a {Attr} on
+GetAttr does she have {Attr}
+GetAttr does he have {Attr}
+GetAttr does she have a {Attr}
+GetAttr does he have a {Attr}
+GetAttr does the killer have {Attr}
+GetAttr are there {Attr}
+GetAttr is there a {Attr}
  
-GetSuspect Is the killer {Suspect}?
-GetSuspect Is it {Suspect}?
-GetSuspect I think the killer is {Suspect}?
-GetSuspect I think its {Suspect}.
-GetSuspect Is the killer {Suspect}?
-GetSuspect My guess is {Suspect}.
+GetSuspect is the killer {Suspect}
+GetSuspect is it {Suspect}
+GetSuspect i think the killer is {Suspect}
+GetSuspect i think its {Suspect}
+GetSuspect is the killer {Suspect}
+GetSuspect my guess is {Suspect}
