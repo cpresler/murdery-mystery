@@ -4,24 +4,16 @@ def get_suspect_intent_handler(request):
     """
     Whodunnit??
     """
-    # Testing Code:
-    test = request.slots["test"] 
-
-    if test == None:
-        return alexa.create_response("Could not find a test phrase!")
-    
-    return alexa.create_response("Hello World this is my test {}".format(test),
-                                 end_session=False)
-
     # Get variables like userId, slots, intent name etc from the 'Request' object
-    # suspect = request.slots["Suspect"] 
+    suspect = request.slots["Suspect"] 
 
-    # if suspect == None:
-    #     return alexa.create_response("Could not find a suspect!")
 
-    # card = alexa.create_card(title="GetRecipeIntent activated", subtitle=None,
-    #                          content="asked alexa to find a recipe using {}".format(suspect))
-    
-    # return alexa.create_response("Finding a recipe with the suspect {}".format(suspect),
-    #                              end_session=False, card_obj=card)
+    if suspect == None:
+        return alexa.create_response("Could not find a suspect!")
+
+    elif suspect == murderer:
+        return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer’s day.  But someone’s day was surely saved.", end_session=True)
+
+    else:
+        return alexa.create_response("You are wrong, the killer will now go free and victim’s murder will never be solved. Way to ruin everything. ", end_session=True)
 
