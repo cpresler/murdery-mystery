@@ -1,7 +1,7 @@
 Script: 
 Prompt:  Alexa, I want to find a murderer
 	Alexa, I want to play a murdery mystery
-Response: Yesterday [victim] was killed with a [weapon] in [location]. I have six suspects on the screen in front of you. Your team is allowed two questions and one guess to figure out the murderer is. Guess correctly and they’ll be arrested and tried. Guess wrong and they go free forever you will be haunted by [victim] for the rest of your days. 
+Response: Yesterday [victim] was killed with a [weapon] in [location]. I have six suspects on the screen in front of you. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and theyâ€™ll be arrested and tried. Guess wrong and they go free forever you will be haunted by [victim] for the rest of your days. 
 Person: 
 Alexa, does the person have a moustache
 Does the person have a beard
@@ -13,7 +13,7 @@ Do they have a beard
 Do they have facial hair
 Do they have a moustache
 
-Alexa’s response:
+Alexaâ€™s response:
 Yes, the killer has facial hair
 No, the killer does not have facial hair
 
@@ -22,7 +22,7 @@ Is the killer wearing a scarf?
 Does the killer have a scarf?
 Has the killer got a scarf?
 
-Alexa’s response:
+Alexaâ€™s response:
 Yes they are
 No they are not
 
@@ -45,7 +45,7 @@ Does he have freckles?
 Does the killer have freckles
 Are there freckles?
 
-Alexa’s response:
+Alexaâ€™s response:
 The killer has freckles
 No, the killer does not have freckles
 
@@ -56,7 +56,7 @@ Is there a pet?
 Does she have a pet?
 Does he have a pet?
 
-Alexa’s responses
+Alexaâ€™s responses
 The killer does have a pet
 The killer does not have a pet
 
@@ -72,9 +72,9 @@ Alexa, I think the killer is:
 
 Alex response:
 
-You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer’s day.  But someone’s day was surely saved. 
+You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killerâ€™s day.  But someoneâ€™s day was surely saved. 
 
-You are wrong, the killer will now go free and [victim’s] murder will never be solved. Way to ruin everything. 
+You are wrong, the killer will now go free and [victimâ€™s] murder will never be solved. Way to ruin everything. 
 
 
 
