@@ -10,8 +10,6 @@ from weaponlist import weapon_list
 from Place_List import place_of_murdery
 from suspects import suspects
 
-#limit number of turns
-turn = 3
 killer = {}
 killer_name = ''
 killer_hair = ''
@@ -51,8 +49,6 @@ def default_handler(request):
 
 @alexa.request_handler("LaunchRequest")
 def launch_request_handler(request):
-    #limit number of turns
-    turn = 3
 
     #use random module to select a random murder weapon
     murder_weapon = random.choice(weapon_list)
@@ -102,13 +98,8 @@ def get_suspect_intent_handler(request):
     elif suspect == killer_name:
         return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer's day.  But someone's day was surely saved.", end_session=True)
 
-    elif suspect != killer_name and turn > 1:
+    elif suspect != killer_name:
         return alexa.create_response("Nope! You're wrong. Ask for a clue about the killer or guess the killer again.")
-        turn = turn -1
-
-    elif suspect != killer_name and turn == 1:
-        return alexa.create_response("Too bad so sad! You're wrong. You have one more guess to catch the killer.")
-        turn = turn - 1
 
     else:
         return alexa.create_response("You are wrong, the killer will now go free and the victim's murder will never be solved. Way to ruin everything. ", end_session=True)
@@ -126,7 +117,7 @@ def get_attr_handler(request):
 
       if attr == None:
         return alexa.create_response("I'm sorry I didn't understand your question, can you please ask again?")
-      elif (turn > 1):
+      else:
         if(attr == 'facial hair' or attr == 'beard' or attr == 'moustache'):
           if(killer_hair == 'yes'):
             return alexa.create_response("Yes, the killer has facial hair", end_session=False)
@@ -162,6 +153,3 @@ def get_attr_handler(request):
             return alexa.create_response("No, the killer does not have a glasses", end_session=False)
         else:
           return alexa.create_response("We have not yet discovered this information about the killer.", end_session=False)
-      else:
-        #prompt to guess
-        return alexa.create_response("You have asked your questions, now it is time to guess the identity of the killer.".format(attr), end_session=False)
