@@ -1,0 +1,83 @@
+Script: 
+Prompt:  Alexa, I want to find a murderer
+	Alexa, I want to play a murdery mystery
+Response: Yesterday [victim] was killed with a [weapon] in [location]. I have six suspects on the screen in front of you. Your team is allowed two questions and one guess to figure out the murderer is. Guess correctly and they’ll be arrested and tried. Guess wrong and they go free forever you will be haunted by [victim] for the rest of your days. 
+Person: 
+Alexa, does the person have a moustache
+Does the person have a beard
+Does the person have facial hair
+Does the killer have a beard
+Does the killer have facial hair
+Does the killer have a moustache
+Do they have a beard
+Do they have facial hair
+Do they have a moustache
+
+Alexa’s response:
+Yes, the killer has facial hair
+No, the killer does not have facial hair
+
+Questions
+Is the killer wearing a scarf?
+Does the killer have a scarf?
+Has the killer got a scarf?
+
+Alexa’s response:
+Yes they are
+No they are not
+
+Questions
+Is the killer wearing a hat
+Does the killer have a hat
+Is there a hat
+Is she wearing a hat?
+Is he wearing a hat
+Do they have a hat on?
+Does the killer have a hat on
+
+Answer:
+Yes, the killer is wearing a hat
+No, the killer does not have a hat?
+
+Questions:
+Does she have freckles?
+Does he have freckles?
+Does the killer have freckles
+Are there freckles?
+
+Alexa’s response:
+The killer has freckles
+No, the killer does not have freckles
+
+Questions
+Does the killer have a pet?
+Do they have a pet?
+Is there a pet?
+Does she have a pet?
+Does he have a pet?
+
+Alexa’s responses
+The killer does have a pet
+The killer does not have a pet
+
+Questions: 
+Is the killer wearing glasses
+Does the killer have glasses
+Is she wearing glasses
+Is he wearing glasses 
+Are there glasses? 
+
+Guess:
+Alexa, I think the killer is:
+
+Alex response:
+
+You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer’s day.  But someone’s day was surely saved. 
+
+You are wrong, the killer will now go free and [victim’s] murder will never be solved. Way to ruin everything. 
+
+
+
+
+
+
