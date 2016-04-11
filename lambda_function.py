@@ -38,6 +38,7 @@ def lambda_handler(request_obj, context=None):
     Then in the handler function you can do something like -
     ... return alexa.create_response('Hello there {}!'.format(request.metadata['user_name']))
     '''
+
     return alexa.route_request(request_obj, metadata)
 
 
@@ -74,8 +75,7 @@ def launch_request_handler(request):
     killer_pet = killer['pet']
     killer_glasses = killer['glasses']
 
-    return alexa.create_response(message="One of you killed with a {0} in the {1}. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and they'll be arrested and tried. Guess wrong and they go free forever. No pressure. So, what is your first question?".format(murder_weapon, murder_location))
-
+    req = alexa.create_response(message="One of you killed with a {0} in the {1}. Your team is allowed two questions and one guess to figure out who the murderer is. Guess correctly and they'll be arrested and tried. Guess wrong and they go free forever. No pressure. So, what is your first question?".format(murder_weapon, murder_location))
 
 @alexa.request_handler("SessionEndedRequest")
 def session_ended_request_handler(request):
@@ -97,9 +97,6 @@ def get_suspect_intent_handler(request):
 
     elif suspect == killer_name:
         return alexa.create_response("You are correct! Congratulations, you have saved the day. Well, not the murder victims day. Or the killer's day.  But someone's day was surely saved.", end_session=True)
-
-    elif suspect != killer_name:
-        return alexa.create_response("Nope! You're wrong. Ask for a clue about the killer or guess the killer again.")
 
     else:
         return alexa.create_response("You are wrong, the killer will now go free and the victim's murder will never be solved. Way to ruin everything. ", end_session=True)
